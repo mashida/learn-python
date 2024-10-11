@@ -29,6 +29,8 @@ def join_similar_segments(segments: list[str], seps: set[str]) -> list[str]:
 if __name__ == "__main__":
     texts: list[str] = ['Вышел корень', ' из т', 'умана; ', 'Вынул но', 'жик из кармана. ', 'Раз, два, всё?..']
     joined_segments = join_similar_segments(texts, SEPARATORS)
+    print(texts)
+    print(joined_segments)
 
     sample = ['Вышел корень из тумана; ', 'Вынул ножик из кармана. ', 'Раз, два, всё?..']
     assert joined_segments == sample

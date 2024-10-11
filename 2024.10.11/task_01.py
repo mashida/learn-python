@@ -27,7 +27,7 @@ def join_similar_segments(segments: list[str], seps: set[str]) -> list[str]:
 
 
 if __name__ == "__main__":
-    texts: list[str] = ['Дем', 'онстра', 'ция!']
+    texts: list[str] = ['Дем', 'онстра', 'ция!', 'Баба ', 'Яга?']
     joined_segments = join_similar_segments(texts, SEPARATORS)
 
     sample = ['Демонстрация!']
